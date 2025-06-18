@@ -1,5 +1,5 @@
 # POC-snyk-terraform
-# Example of Using Snyk Exceptions for Terraform
+# Example of Using Snyk ignore for Terraform
 
 This repository demonstrates how to use Snyk exceptions for Terraform configurations. It shows how to manually create a `.snyk` file to ignore detected vulnerabilities.
 
