@@ -1,11 +1,6 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
 version: v1.25.0
 ignore:
-  # SNYK-CC-AZURE-552:
-  #   - '*':
-  #       reason: Diagnostics are fine
-  #       expires: 2025-03-17T11:47:02.331Z
-  #       created: 2025-02-15T11:47:02.333Z
   SNYK-CC-TF-149:
     - 'terraform/storage.tf > resource > azurerm_storage_account[this] > min_tls_version':
         reason: Attribute is invalid
@@ -15,4 +10,9 @@ ignore:
     - '*':
         reason: Fine to ignore for demo
         created: 2025-06-18T10:00:00.000Z
+# example license ignore
+  snyk:lic:composer:fileeye:mimemap:LGPL-3.0:
+    - '*':
+        reason: ignore license issue
+        created: 2025-07-14T10:00:00.000Z
 patch: {}
